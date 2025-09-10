@@ -187,15 +187,21 @@ header {
   text-align: center;
 }
 
-/* Side Images */
+/* Side Images (sticky across site) */
 .side-image {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 120px; /* adjust as per need */
+  width: 80px;
   opacity: 0.8;
+  z-index: 10; 
+  pointer-events:none; /* prevent blocking clicks */
 }
 
+/* Hide with JS */
+.side-image.hidden {
+  display: none !important;
+}
 .side-image.left {
   left: 0;
 }
@@ -203,6 +209,8 @@ header {
 .side-image.right {
   right: 0;
 }
+
+
 
 /* Heading + Text */
 .content-section h2 {

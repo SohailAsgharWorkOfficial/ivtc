@@ -285,5 +285,23 @@
       updateCount();
     });
   </script>
+  <script>
+    const sideImages = document.querySelectorAll('.side-image');
+    const hero = document.querySelector('.hero');
+    const footer = document.querySelector('footer');
+
+    window.addEventListener('scroll', () => {
+      const heroRect = hero.getBoundingClientRect();
+      const footerRect = footer.getBoundingClientRect();
+
+      // If hero OR footer is visible → hide images
+      if (heroRect.bottom > 0 && heroRect.top < window.innerHeight ||
+          footerRect.top < window.innerHeight && footerRect.bottom > 0) {
+        sideImages.forEach(img => img.classList.add('hidden'));
+      } else {
+        sideImages.forEach(img => img.classList.remove('hidden'));
+      }
+    });
+  </script>
   </body>
 </html>
