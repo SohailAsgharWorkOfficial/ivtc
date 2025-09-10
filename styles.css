@@ -246,12 +246,9 @@ header {
   transition: transform 0.3s ease;
 }
 
-/* .service-card:hover {
-      transform: translateY(-8px);
-    } */
 .service-card:hover {
   background: linear-gradient(135deg, #1a3d92, #1a8dd2);
-  transform: translateY(-8px);
+  
 }
 
 .service-card:hover h3,
