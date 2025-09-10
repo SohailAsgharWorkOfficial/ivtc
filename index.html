@@ -209,7 +209,40 @@
       </div>
     </div>
   </section>
+  
+  <!-- stats section -->
+  <section class="stats-section">
+    <div class="stats-left">
+      Hitting <br> New Records
+    </div>
 
+    <div class="stats-center">
+      <div class="stat">
+        <h2 data-target="401">0+</h2>
+        <p>happy customers</p>
+      </div>
+      <div class="stat">
+        <h2 data-target="144">0+</h2>
+        <p>experienced designers</p>
+      </div>
+      <div class="stat">
+        <h2 data-target="8">0+</h2>
+        <p>years in the industry</p>
+      </div>
+      <div class="stat">
+        <h2 data-target="320">0+</h2>
+        <p>websites designed</p>
+      </div>
+      <div class="stat">
+        <h2 data-target="481">0+</h2>
+        <p>logos designed</p>
+      </div>
+    </div>
+
+    <div class="stats-right">
+      <a href="#" class="btn">GET STARTED NOW</a>
+    </div>
+  </section>
 
 
 
@@ -230,6 +263,26 @@
         tab.classList.add("active");
         // Future: You can add logic to change pricing cards per tab
       });
+    });
+  </script>
+  <script>
+    // Counter Animation
+    const counters = document.querySelectorAll('.stat h2');
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const speed = target / 100; // adjust speed
+
+      const updateCount = () => {
+        if(count < target) {
+          count += speed;
+          counter.textContent = Math.ceil(count) + "+";
+          requestAnimationFrame(updateCount);
+        } else {
+          counter.textContent = target + "+";
+        }
+      };
+      updateCount();
     });
   </script>
   </body>
