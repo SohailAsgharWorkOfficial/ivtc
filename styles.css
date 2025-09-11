@@ -850,7 +850,6 @@ header {
   margin: 0 auto;
   background: #fff;
   color: #000;
-  border-radius: 10px;
   padding: 40px 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
@@ -894,16 +893,23 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
-  border: 2px solid white;
+  background: none;
+  border: none;
   color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   z-index: 10;
+  padding: 0;
 }
+
+.arrow.left1 {
+  left: -50px;
+}
+
+.arrow.right1 {
+  right: -50px;
+}
+
 
 .arrow.left1 {
   left: -60px;
