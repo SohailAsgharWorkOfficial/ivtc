@@ -37,22 +37,39 @@
       </div>
     </header>
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero-slider">
       <div class="cube-left"></div>
       <div class="cube-right"></div>
 
-      <div class="arrow left">&#8592;</div>
-      <div class="arrow right">&#8594;</div>
+     <div class="hero-slide active">
+    <div class="hero-content">
+      <div class="laptop" style="background-image: url('laptop.png');"></div>
+      <h1>GROW YOUR BRAND WITH US</h1>
+      <p>We develop a strong brand identity that connects with your audience!</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="hero-bg left" style="background-image: url('left-bg1.png');"></div>
+    <div class="hero-bg right" style="background-image: url('right-bg1.png');"></div>
+  </div>
 
-      <div>
-        <div class="laptop"></div>
-        <h1>GROW YOUR BRAND WITH US</h1>
-        <p>
-          We develop a strong brand identity that connects with your audience!
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
+  <div class="hero-slide">
+    <div class="hero-content">
+      <div class="laptop" style="background-image: url('laptop2.png');"></div>
+      <h1>CREATE IMPACTFUL DESIGNS</h1>
+      <p>Your visual identity deserves attention and precision!</p>
+      <a href="#" class="btn">Explore</a>
+    </div>
+    <div class="hero-bg left" style="background-image: url('left-bg2.png');"></div>
+    <div class="hero-bg right" style="background-image: url('right-bg2.png');"></div>
+  </div>
+
+  <!-- Add more slides as needed -->
+
+  <!-- Arrows -->
+  <div class="arrow left">&#8592;</div>
+  <div class="arrow right">&#8594;</div>
     </section>
+    <!-- HERO SECTION -->
 
     <!-- Content Section -->
     <section class="content-section">
@@ -609,115 +626,16 @@
   </div>
 </footer>
 <!-- Footer Section -->
+   <script src="hero.js"></script>
+   <script src="counter.js"></script>
+    <script src="pricing.js"></script>
+    <script src="portfolio.js"></script>
+    <script src="testimonials.js"></script>
+    
+   
+    
+    
 
-    <script>
-      // Tab switching functionality
-      const tabs = document.querySelectorAll(".tab");
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("active"));
-          tab.classList.add("active");
-          // Future: You can add logic to change pricing cards per tab
-        });
-      });
-    </script>
-    <script>
-      // Counter Animation
-      const counters = document.querySelectorAll(".stat h2");
-      counters.forEach((counter) => {
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
-        const speed = target / 100; // adjust speed
-
-        const updateCount = () => {
-          if (count < target) {
-            count += speed;
-            counter.textContent = Math.ceil(count) + "+";
-            requestAnimationFrame(updateCount);
-          } else {
-            counter.textContent = target + "+";
-          }
-        };
-        updateCount();
-      });
-    </script>
-    <script>
-      const sideImages = document.querySelectorAll(".side-image");
-      const hero = document.querySelector(".hero");
-      const footer = document.querySelector("footer");
-
-      window.addEventListener("scroll", () => {
-        const heroRect = hero.getBoundingClientRect();
-        const footerRect = footer.getBoundingClientRect();
-
-        // If hero OR footer is visible → hide images
-        if (
-          (heroRect.bottom > 0 && heroRect.top < window.innerHeight) ||
-          (footerRect.top < window.innerHeight && footerRect.bottom > 0)
-        ) {
-          sideImages.forEach((img) => img.classList.add("hidden"));
-        } else {
-          sideImages.forEach((img) => img.classList.remove("hidden"));
-        }
-      });
-    </script>
-    <script>
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          // Remove active class from all buttons
-          filterButtons.forEach((btn) => btn.classList.remove("active"));
-          // Add active to clicked
-          button.classList.add("active");
-
-          const filterValue = button.getAttribute("data-filter");
-
-          portfolioItems.forEach((item) => {
-            const itemCategory = item.getAttribute("data-category");
-
-            if (filterValue === "all" || itemCategory === filterValue) {
-              item.style.display = "block";
-            } else {
-              item.style.display = "none";
-            }
-          });
-        });
-      });
-    </script>
-<script>
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelectorAll('.dot');
-  const prevBtn = document.querySelector('.arrow.left1');
-  const nextBtn = document.querySelector('.arrow.right1');
-
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-      dots[i].classList.toggle('active', i === index);
-    });
-    currentSlide = index;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    let next = (currentSlide + 1) % slides.length;
-    showSlide(next);
-  });
-
-  prevBtn.addEventListener('click', () => {
-    let prev = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(prev);
-  });
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      showSlide(index);
-    });
-  });
-</script>
 
   </body>
 </html>
