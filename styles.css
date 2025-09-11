@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -250,12 +249,12 @@ header {
     font-size: 30px;
   }
   .arrow.left {
-  left: 10%;
-}
+    left: 10%;
+  }
 
-.arrow.right {
-  right: 10%;
-}
+  .arrow.right {
+    right: 10%;
+  }
 }
 
 /* HERO */
@@ -771,7 +770,7 @@ header {
 .info-box {
   background-color: #f9fbff;
   padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-right: 1px solid #e0e0e0;
 }
 
@@ -825,7 +824,7 @@ header {
 /* ====== Testimonial Section ====== */
 .testimonial-section {
   overflow-x: hidden;
-  background: url('background.png') no-repeat center center/cover;
+  background: url("background.png") no-repeat center center/cover;
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -910,7 +909,6 @@ header {
   right: -50px;
 }
 
-
 .arrow.left1 {
   left: -60px;
 }
@@ -942,10 +940,16 @@ header {
 
 /* Contact Section */
 .contact-section {
-  background: linear-gradient(to right, #1d2671, #2052af, #1d2671, #2052af); /* Adjust gradient as needed */
+  background: linear-gradient(
+    to right,
+    #1d2671,
+    #2052af,
+    #1d2671,
+    #2052af
+  ); /* Adjust gradient as needed */
   color: #fff;
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .contact-container {
@@ -1033,11 +1037,11 @@ header {
 
 /* footer section */
 .site-footer {
-  background: url('footer-bg.png') no-repeat center center;
+  background: url("footer-bg.png") no-repeat center center;
   background-size: cover;
   color: #ddd;
   padding: 60px 20px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .footer-container {
@@ -1099,7 +1103,7 @@ header {
 }
 
 .footer-column ul li a::before {
-  content: '•';
+  content: "•";
   color: red;
   position: absolute;
   left: 0;
