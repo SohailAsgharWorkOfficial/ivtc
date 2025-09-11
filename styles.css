@@ -86,8 +86,6 @@ header {
 /* HEADER */
 
 /* HERO */
-
-
 /* Left side background image */
 .hero-slider::before {
   content: "";
@@ -206,24 +204,37 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
   z-index: 5;
   cursor: pointer;
   user-select: none;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
+
+  /* Remove all unwanted styling */
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
+.arrow img {
+  width: 30px;
+  height: auto;
+  display: block;
+
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
 .arrow.left {
-  left: 50px;
+  left: 30%;
 }
 
 .arrow.right {
-  right: 50px;
+  right: 30%;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .laptop {
@@ -238,6 +249,13 @@ header {
   .arrow {
     font-size: 30px;
   }
+  .arrow.left {
+  left: 10%;
+}
+
+.arrow.right {
+  right: 10%;
+}
 }
 
 /* HERO */
