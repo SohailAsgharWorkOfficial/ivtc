@@ -417,6 +417,106 @@
     </section>
     <!-- portfolio section -->
 
+    <!-- agency info section -->
+    <section class="agency-info-section">
+      <div class="info-grid">
+        <!-- Left Highlighted Column -->
+        <div class="info-box highlight">
+          <p>
+            <span class="red-text">A DIGITAL AGENCY</span><br />
+            <strong>SPECIALIZED IN</strong><br />
+            DIGITAL CREATION &<br />
+            BRAND STRATEGY
+          </p>
+        </div>
+
+        <!-- Feature 1 -->
+        <div class="info-box">
+          <h3>Industry Specific Designers</h3>
+          <p>
+            The management team has built up experience over years of services
+            with the most creative designers with high quality services.
+          </p>
+          <div class="arrow-nav"><span>&larr;</span> <span>&rarr;</span></div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="info-box">
+          <h3>Logo Delivery Within 50 Minutes</h3>
+          <p>
+            When it comes to designing skills supremacy, our team’s expertise
+            knows no bounds. Each aspect of designing is kept intact as well as
+            making sure that none of the quality aspects are affected.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="info-box">
+          <h3>Free Logo Multiple File Formats</h3>
+          <p>
+            When you get a logo design it’s not just an image that you need, you
+            might need different formats if you intend to use the logo for
+            different purposes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- agency info section -->
+
+    <!-- testimonial-section -->
+    <section class="testimonial-section">
+      <h2>Testimonials</h2>
+      <p class="subheading">Our Happy Clients</p>
+
+      <div class="testimonial-slider">
+        <!-- Slides Wrapper -->
+        <div class="slides-container">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img src="person1.png" alt="Richard Johnson" class="profile-img" />
+            <h3>Richard Johnson</h3>
+            <p>
+              “Till now, our organization was heading to the dead end for the
+              branding and digital marketing till Logo Designs team took the
+              task upon them to provide us with proper care and assistance”
+            </p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="person1.png" alt="Emily Carter" class="profile-img" />
+            <h3>Emily Carter</h3>
+            <p>
+              “I’m super impressed by the creativity and professionalism the
+              team showed. Everything from logo design to brand strategy was
+              top-notch!”
+            </p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="person1.png" alt="David Smith" class="profile-img" />
+            <h3>David Smith</h3>
+            <p>
+              “Quick delivery and high-quality work. I couldn’t have asked for a
+              better design agency. Totally recommend!”
+            </p>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="arrow left1">&#8591;</button>
+        <button class="arrow right1">&#8591;</button>
+
+        <!-- Dots -->
+        <div class="dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial-section -->
     <script>
       // Tab switching functionality
       const tabs = document.querySelectorAll(".tab");
@@ -493,5 +593,38 @@
         });
       });
     </script>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.querySelector('.arrow.left1');
+  const nextBtn = document.querySelector('.arrow.right1');
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    let next = (currentSlide + 1) % slides.length;
+    showSlide(next);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    let prev = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(prev);
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+    });
+  });
+</script>
+
   </body>
 </html>

@@ -668,3 +668,183 @@ header {
   transform: scale(1.02);
 }
 /* portfolio section */
+
+/* agency info section  */
+.agency-info-section {
+  background-color: #f9fbff;
+  padding: 60px 20px;
+}
+
+/* Grid Layout */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Box Styles */
+.info-box {
+  background-color: #f9fbff;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Highlighted Left Column */
+.info-box.highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  border-right: none;
+}
+
+.info-box.highlight .red-text {
+  color: #d6183d;
+  font-weight: bold;
+}
+
+/* Headings and Text */
+.info-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Arrows */
+.arrow-nav {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #d6183d;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* agency info section  */
+
+/* testimonial section */
+/* ====== Testimonial Section ====== */
+.testimonial-section {
+  background: url('background.png') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-section .subheading {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Slider */
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.slides-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid crimson;
+}
+
+.slide h3 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.slide p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left1 {
+  left: -60px;
+}
+
+.arrow.right1 {
+  right: -60px;
+}
+
+/* Dots */
+.dots {
+  margin-top: 25px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: crimson;
+}
+/* testimonial section */
