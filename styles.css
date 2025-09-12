@@ -907,6 +907,8 @@ header {
 /* portfolio section */
 
 /* agency info section  */
+
+
 .agency-info-section {
   background-color: #f9fbff;
   padding: 60px 20px;
@@ -973,6 +975,17 @@ header {
   .info-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Make feature boxes horizontal slider */
+#featureSlider {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+#featureSlider .feature {
+  width: 300px; /* adjust as needed */
+  flex-shrink: 0;
 }
 /* agency info section  */
 
