@@ -139,7 +139,7 @@ header {
   .logo img {
     height: 32px;
   }
-   .hamburger {
+  .hamburger {
     display: block; /* show hamburger */
     color: #000;
   }
@@ -160,7 +160,7 @@ header {
     width: 100%;
     background: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 8px 8px;
     z-index: 999;
   }
@@ -373,261 +373,271 @@ header {
   z-index: 10;
   pointer-events: none;
 }
-.side-image.left { left: 0; }
-.side-image.right { right: 0; }
-.side-image.hidden { display: none !important; }
+.side-image.left {
+  left: 0;
+}
+.side-image.right {
+  right: 0;
+}
+.side-image.hidden {
+  display: none !important;
+}
 
 .content-section {
-      position: relative;
-      padding: 80px 0;
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .content-section p {
+  position: relative;
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content-section p {
   font-size: 16px;
   color: #070707;
   max-width: 800px;
   margin: 0 auto 50px;
   line-height: 1.6;
-  padding-top: 5px;;
+  padding-top: 5px;
 }
 
-    /* Wrapper to hide overflow */
-    .services-wrapper {
-      overflow: hidden;
-      width: 100%;
-      max-width: 1050px; /* 3 cards visible */
-      margin: auto;
-       background-color: rgb(247, 247, 247);
-    }
+/* Wrapper to hide overflow */
+.services-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1050px; /* 3 cards visible */
+  margin: auto;
+  background-color: rgb(247, 247, 247);
+}
 
-    /* Services Row */
-    .services {
-      display: flex;
-      transition: transform 0.5s ease;
-      will-change: transform;
-    }
+/* Services Row */
+.services {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
 
-    /* Service Card */
-    .service-card {
-      flex: 0 0 calc(100% / 3); /* 3 per row */
-      background: #fff;
-      border-radius: 12px;
-      padding: 40px 50px;
-      text-align: center;
-      box-sizing: border-box;
-      transition: transform 0.3s ease;
-      color: #000;
-      background-color: rgb(247, 247, 247);
-    }
-    .service-card p{
-      padding-top: 20px;
-      font-size: 15px;
-    }
-    .service-card:hover {
-      background: linear-gradient(135deg, #1a3d92, #1a8dd2);
-      color: #fff;
-    }
-    .service-card img {
-      width: 60px;
-      margin-bottom: 15px;
-    }
+/* Service Card */
+.service-card {
+  flex: 0 0 calc(100% / 3); /* 3 per row */
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 50px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  color: #000;
+  background-color: rgb(247, 247, 247);
+}
+.service-card p {
+  padding-top: 20px;
+  font-size: 15px;
+}
+.service-card:hover {
+  background: linear-gradient(135deg, #1a3d92, #1a8dd2);
+  color: #fff;
+}
+.service-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
 
-    /* Arrows */
-    .arrow1 {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      font-size: 28px;
-      color: #d21c3f;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      z-index: 50;
-    }
-    .arrow1:hover {
-      transform: translateY(-50%) scale(1.5);
-      color: #000;
-    }
-    .arrow1.left { left: 90px; }
-    .arrow1.right { right: 90px; }
+/* Arrows */
+.arrow1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #d21c3f;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 50;
+}
+.arrow1:hover {
+  transform: translateY(-50%) scale(1.5);
+  color: #000;
+}
+.arrow1.left {
+  left: 90px;
+}
+.arrow1.right {
+  right: 90px;
+}
 
 /* Section Wrapper1 */
 
 /* pricing section */
-  .pricing-section {
-      text-align: center;
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+.pricing-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .pricing-section h2 {
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #333;
-    }
+.pricing-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-    .pricing-section p {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 30px;
-    }
+.pricing-section p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
 
-    .pricing-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 40px;
-    }
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
 
-    .pricing-tabs button {
-      padding: 8px 20px;
-      border: 2px solid #2540d8;
-      border-radius: 30px;
-      background: #fff;
-      color: #444;
-      font-size: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+.pricing-tabs button {
+  padding: 8px 20px;
+  border: 2px solid #2540d8;
+  border-radius: 30px;
+  background: #fff;
+  color: #444;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .pricing-tabs button.active {
-      background: #007bff;
-      color: #fff;
-      border-color: #080808;
-    }
+.pricing-tabs button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #080808;
+}
 
-    .pricing-tabs button:hover {
-      background: #007bff;
-      color: #fff;
-      border-color: #080808;
-    }
+.pricing-tabs button:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #080808;
+}
 
-    .pricing-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
 
-    .pricing-card {
-      background: linear-gradient(135deg, #0033a0, #0066ff);
-      border-radius: 12px;
-      color: #fff;
-      padding: 25px 20px;
-      text-align: left;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+.pricing-card {
+  background: linear-gradient(135deg, #0033a0, #0066ff);
+  border-radius: 12px;
+  color: #fff;
+  padding: 25px 20px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .pricing-card .price {
-      font-size: 38px;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
+.pricing-card .price {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
 
-    .pricing-card .discount {
-      position: absolute;
-      top: 25px;
-      right: -35px;
-      background: #000;
-      color: #fff;
-      font-size: 13px;
-      padding: 6px 40px;
-      transform: rotate(45deg);
-      font-weight: 600;
-    }
+.pricing-card .discount {
+  position: absolute;
+  top: 25px;
+  right: -35px;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 40px;
+  transform: rotate(45deg);
+  font-weight: 600;
+}
 
-    .pricing-card h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
+.pricing-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
 
-    .pricing-card small {
-      display: block;
-      font-size: 13px;
-      color: #ddd;
-      margin-bottom: 20px;
-    }
+.pricing-card small {
+  display: block;
+  font-size: 13px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
 
-    .pricing-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 20px 0;
-    }
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
 
-    .pricing-card ul li {
-      margin: 8px 0;
-      font-size: 14px;
-      position: relative;
-      padding-left: 22px;
-    }
+.pricing-card ul li {
+  margin: 8px 0;
+  font-size: 14px;
+  position: relative;
+  padding-left: 22px;
+}
 
-    .pricing-card ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #4ade80;
-      font-weight: bold;
-    }
+.pricing-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4ade80;
+  font-weight: bold;
+}
 
-    .card-actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .pricing-card .btn {
-      background: #fff;
-      color: #0033a0;
-      border: none;
-      padding: 10px 20px;
-      font-size: 13px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+.pricing-card .btn {
+  background: #fff;
+  color: #0033a0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .pricing-card .btn:hover {
-      background: #f1f1f1;
-    }
+.pricing-card .btn:hover {
+  background: #f1f1f1;
+}
 
-    .pricing-card .chat {
-      font-size: 13px;
-      color: #fff;
-      text-decoration: none;
-      position: relative;
-    }
+.pricing-card .chat {
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
 
-    .pricing-card .chat::after {
-      content: "●";
-      color: red;
-      font-size: 10px;
-      margin-left: 6px;
-    }
+.pricing-card .chat::after {
+  content: "●";
+  color: red;
+  font-size: 10px;
+  margin-left: 6px;
+}
 
-    @media (max-width: 992px) {
-      .pricing-cards {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+@media (max-width: 992px) {
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-    @media (max-width: 600px) {
-      .pricing-cards {
-        grid-template-columns: 1fr;
-      }
-      .card-actions {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-      }
-    }
+@media (max-width: 600px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  .card-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
 /* pricing section */
 
 /* Stats Section */
@@ -907,7 +917,6 @@ header {
 /* portfolio section */
 
 /* agency info section  */
-
 
 .agency-info-section {
   background-color: #f9fbff;
