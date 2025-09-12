@@ -1,18 +1,9 @@
-  window.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector("header");
-    const hero = document.querySelector("#hero-slider");
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
 
-    if (header && hero) {
-      hero.style.paddingTop = header.offsetHeight + "px";
-    }
+    hamburger.addEventListener("click", () => {
+      console.log("Hamburger clicked ✅"); // test message
+      menu.classList.toggle("show");
+    });
   });
-  function toggleMenu() {
-  document.querySelector(".menu").classList.toggle("show");
-}
-
-// Close menu when clicking a link (optional)
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".menu").classList.remove("show");
-  });
-});
