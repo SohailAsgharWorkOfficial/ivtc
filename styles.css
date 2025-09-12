@@ -107,7 +107,7 @@ header {
     padding: 16px;
   }
 
-     .menu {
+  .menu {
     display: none !important; /* hidden by default */
     flex-direction: column;
     width: 100%;
@@ -117,8 +117,8 @@ header {
     border-radius: 0 0 8px 8px;
     z-index: 999;
     position: relative; /* ✅ normal flow mei rehne do */
-    top: auto;          /* ✅ reset */
-    left: auto;         /* ✅ reset */
+    top: auto; /* ✅ reset */
+    left: auto; /* ✅ reset */
   }
 
   .menu.show {
@@ -163,7 +163,6 @@ header {
     height: 32px;
   }
 }
-
 
 /* HEADER */
 
@@ -452,6 +451,77 @@ header {
 }
 .arrow1.right {
   right: 1px;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-card {
+    flex: 0 0 calc(100% / 2); /* 2 per row on tablets */
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex: 0 0 calc(100% / 2); /* 2 per row */
+    padding: 25px 15px;
+  }
+
+  .services-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .arrow1 {
+    font-size: 22px;
+    top: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    flex: 0 0 100%; /* 1 per row on phones */
+    padding: 20px 15px;
+  }
+
+  .services-wrapper {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .arrow1 {
+    font-size: 20px;
+    top: 45%;
+  }
+
+  /* ❌ hide side placeholders on phones */
+  .side-image {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .arrow1 {
+    position: absolute;
+    top: 50%; /* vertical center */
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 20px;
+    color: #121111;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 100;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .arrow1.left {
+    left: 8px;
+  }
+
+  .arrow1.right {
+    right: 8px;
+  }
 }
 
 /* Section Wrapper1 */
