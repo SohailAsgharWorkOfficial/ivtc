@@ -23,9 +23,6 @@
           <img src="logo.png" alt="Logo"/>
         </div>
 
-        <!-- Hamburger Button -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
         <ul class="menu">
           <li><a href="#hero-slider">HOME</a></li>
           <li><a href="#testimonial-section">ABOUT US</a></li>
@@ -94,61 +91,47 @@
       </div>
     </section>
     <!-- HERO SECTION -->
-
+  
     <!-- Content Section -->
-    <section class="content-section">
-      <!-- Left/Right Image Placeholders -->
-      <img src="left-placeholder.png" alt="Left Side" class="side-image left" />
-      <img
-        src="right-placeholder.png"
-        alt="Right Side"
-        class="side-image right"
-      />
+<section class="content-section">
+  <img src="left-placeholder.png" alt="Left Side" class="side-image left" />
+  <img src="right-placeholder.png" alt="Right Side" class="side-image right" />
+    <h1 style="color: #444444; font-family: Ubuntu">Conceptualization, Transformation And Creativity</h1>
+    <p>We blend creative strategies, outstanding designs, and technology.</p>
 
-      <h1
-        style="
-          color: #444444;
-          font-family: Ubuntu;
-          padding-bottom: 10px;
-          font-size: 30px;
-        "
-      >
-        Conceptualization, Transformation And Creativity
-      </h1>
-      <p>
-        We possess experience of more than a decade and we shape your brand
-        according to today’s business needs. We blend creative strategies,
-        outstanding designs, creative mindset and technological advancements.
-      </p>
+    <div class="services-slider-container">
+      <button class="arrow1 left" onclick="slideLeft()">&#8592;</button>
 
-      <!-- Services -->
-      <div id="services" class="services">
-        <div class="service-card">
-          <img src="service1.png" alt="Logo Design" />
-          <h3>Logo Design</h3>
-          <p>
-            We give you the chance to work with professional designers for the
-            creation of logo designs that are versatile.
-          </p>
-        </div>
-        <div class="service-card">
-          <img src="service2.png" alt="Social Media" />
-          <h3>Social Media</h3>
-          <p>
-            We help social media campaigns for different brands and create
-            personalized messaging to increase visibility.
-          </p>
-        </div>
-        <div class="service-card">
-          <img src="service3.png" alt="Web Design" />
-          <h3>Web Design & Development</h3>
-          <p>
-            We design websites that reflect your brand. Our custom web solutions
-            bring your vision to life.
-          </p>
+      <div class="services-wrapper">
+        <div id="servicesSlider" class="services">
+          <div class="service-card"><img src="service1.png"><h3>Logo Design</h3><p>We give you the chance to work with professional designers for the
+            creation of logo designs that are versatile.</p></div>
+          <div class="service-card"><img src="service2.png"><h3>Social Media</h3><p>We help social media campaigns for different brands and create
+            personalized messaging to increase visibility.</p></div>
+          <div class="service-card"><img src="service3.png"><h3>Web Development</h3><p>We design websites that reflect your brand. Our custom web solutions
+            bring your vision to life.</p></div>
+          <div class="service-card"><img src="service1.png"><h3>Logo Design</h3><p>We give you the chance to work with professional designers for the
+            creation of logo designs that are versatile.</p></div>
+          <div class="service-card"><img src="service2.png"><h3>Social Media</h3><p>We help social media campaigns for different brands and create
+            personalized messaging to increase visibility.</p></div>
+          <div class="service-card"><img src="service3.png"><h3>Web Development</h3><p>We design websites that reflect your brand. Our custom web solutions
+            bring your vision to life.</p></div>
+            <div class="service-card"><img src="service1.png"><h3>Logo Design</h3><p>We give you the chance to work with professional designers for the
+            creation of logo designs that are versatile.</p></div>
+          <div class="service-card"><img src="service2.png"><h3>Social Media</h3><p>We help social media campaigns for different brands and create
+            personalized messaging to increase visibility.</p></div>
+          <div class="service-card"><img src="service3.png"><h3>Web Development</h3><p>We design websites that reflect your brand. Our custom web solutions
+            bring your vision to life.</p></div>
+
         </div>
       </div>
-    </section>
+
+      <button class="arrow1 right" onclick="slideRight()">&#8594;</button>
+    </div>
+  </section>
+ 
+
+
     <!-- Content Section with Vertical Text -->
     <section class="content-section">
       <!-- Left vertical text -->
@@ -213,116 +196,25 @@
     </section>
 
     <!-- Pricing Section -->
-    <!-- Pricing Section -->
-<section id="pricing-section" class="pricing-section">
-  <h2 style="color: #444444; font-family: Ubuntu">
-    Most Affordable Packages
-  </h2>
-  <p>
-    We are well aware of the competition. That is the reason why we have a
-    fair pricing model. We ensure quality over quantity on each order.
-  </p>
+    <section class="pricing-section">
+  <h2>Most Affordable Packages</h2>
+  <p>We are well aware of the competition. That is the reason why we have a fair pricing model.<br>
+  We ensure quality over quantity on each order.</p>
 
   <!-- Tabs -->
-  <div class="tabs">
-    <div class="tab active" data-tab="logo">Logo Design</div>
-    <div class="tab" data-tab="web">Web Design</div>
-    <div class="tab" data-tab="video">Video Animation</div>
-    <div class="tab" data-tab="branding">Branding</div>
-    <div class="tab" data-tab="ecommerce">E-Commerce</div>
-    <div class="tab" data-tab="social">Social Marketing</div>
-    <div class="tab" data-tab="combo">Combo Packages</div>
-    <div class="tab" data-tab="seo">SEO</div>
+  <div class="pricing-tabs">
+    <button class="active" data-category="logo">Logo Design</button>
+    <button data-category="web">Web Design</button>
+    <button data-category="video">Video Animation</button>
+    <button data-category="branding">Branding</button>
+    <button data-category="ecommerce">E-Commerce</button>
+    <button data-category="social">Social Marketing</button>
+    <button data-category="combo">Combo Packages</button>
+    <button data-category="seo">SEO</button>
   </div>
 
-  <!-- Pricing Cards -->
-  <div class="tab-content active" id="logo">
-    <div class="cards">
-      <!-- Card 1 -->
-      <div class="card">
-        <div class="discount-badge">75% OFF $100</div>
-        <h3>$29.99</h3>
-        <h4>Basic Logo Packages</h4>
-        <ul>
-          <li>✔ 2 Custom Logo Design Concepts</li>
-          <li>✔ 2 Revisions</li>
-          <li>✔ 48 Hours Turnaround</li>
-          <li>✔ 100% Satisfaction Guarantee</li>
-          <li>✔ 100% Money Back Guarantee</li>
-        </ul>
-        <a href="#" class="btn">ORDER NOW</a>
-        <div class="live-chat">Click to <span>●</span> Live Chat</div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="card">
-        <div class="discount-badge">75% OFF $200</div>
-        <h3>$89.99</h3>
-        <h4>Beginner’s Logo Packages</h4>
-        <ul>
-          <li>✔ 4 Custom Logo Design Concepts</li>
-          <li>✔ FREE Icon</li>
-          <li>✔ Unlimited Revisions</li>
-          <li>✔ 5 File Formats (JPEG, PNG, PDF, TIFF, SVG)</li>
-          <li>✔ 100% Ownership Rights</li>
-        </ul>
-        <a href="#" class="btn">ORDER NOW</a>
-        <div class="live-chat">Click to <span>●</span> Live Chat</div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="card">
-        <div class="discount-badge">75% OFF $380</div>
-        <h3>$149.99</h3>
-        <h4>Silver Logo Packages</h4>
-        <ul>
-          <li>✔ 6 Custom Logo Design Concepts</li>
-          <li>✔ Unlimited Revisions</li>
-          <li>✔ FREE Stationery Designs</li>
-          <li>✔ FREE Icon</li>
-          <li>✔ 100% Ownership Rights</li>
-        </ul>
-        <a href="#" class="btn">ORDER NOW</a>
-        <div class="live-chat">Click to <span>●</span> Live Chat</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Web Design Cards -->
-  <div class="tab-content" id="web">
-    <div class="cards">
-      <div class="card">
-        <div class="discount-badge">70% OFF $500</div>
-        <h3>$149.99</h3>
-        <h4>Basic Web Package</h4>
-        <ul>
-          <li>✔ 3 Pages Website</li>
-          <li>✔ Responsive Design</li>
-          <li>✔ Free Hosting (1 year)</li>
-        </ul>
-        <a href="#" class="btn">ORDER NOW</a>
-        <div class="live-chat">Click to <span>●</span> Live Chat</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Example for another tab -->
-  <div class="tab-content" id="video">
-    <div class="cards">
-      <div class="card">
-        <div class="discount-badge">60% OFF $600</div>
-        <h3>$249.99</h3>
-        <h4>Video Animation Package</h4>
-        <ul>
-          <li>✔ 60-sec Explainer Video</li>
-          <li>✔ Voice Over</li>
-          <li>✔ Unlimited Revisions</li>
-        </ul>
-        <a href="#" class="btn">ORDER NOW</a>
-        <div class="live-chat">Click to <span>●</span> Live Chat</div>
-      </div>
-    </div>
-  </div>
+  <!-- Cards -->
+  <div id="pricing-cards" class="pricing-cards"></div>
 </section>
     <!-- Pricing Section -->
 
@@ -442,6 +334,7 @@
         <div class="award-logo"><img src="award5.png" alt="Award 2" /></div>
       </div>
     </section>
+    <div style="border-bottom: 0.5px solid black; width: 100%; margin: 0 auto;"></div>
     <!-- awards section -->
 
     <!-- portfolio section -->
@@ -721,6 +614,6 @@
     <script src="pricing.js"></script>
     <script src="portfolio.js"></script>
     <script src="testimonials.js"></script>
-    <script src="header.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>
