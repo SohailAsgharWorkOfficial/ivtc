@@ -1,4 +1,4 @@
-   const slides = document.querySelectorAll('.hero-slide');
+  const slides = document.querySelectorAll('.hero-slide');
   const prevArrow = document.querySelector('.arrow.left');
   const nextArrow = document.querySelector('.arrow.right');
 

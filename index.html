@@ -20,8 +20,11 @@
       <!-- Main Navbar -->
       <div class="navbar">
         <div class="logo">
-          <img src="logo.png" alt="Logo" />
+          <img src="logo.png" alt="Logo"/>
         </div>
+
+        <!-- Hamburger Button -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
         <ul class="menu">
           <li><a href="#hero-slider">HOME</a></li>
@@ -210,78 +213,118 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing-section" class="pricing-section">
-      <h2 style="color: #444444; font-family: Ubuntu">
-        Most Affordable Packages
-      </h2>
-      <p>
-        We are well aware of the competition. That is the reason why we have a
-        fair pricing model. We ensure quality over quantity on each order.
-      </p>
+    <!-- Pricing Section -->
+<section id="pricing-section" class="pricing-section">
+  <h2 style="color: #444444; font-family: Ubuntu">
+    Most Affordable Packages
+  </h2>
+  <p>
+    We are well aware of the competition. That is the reason why we have a
+    fair pricing model. We ensure quality over quantity on each order.
+  </p>
 
-      <!-- Tabs -->
-      <div class="tabs">
-        <div class="tab active">Logo Design</div>
-        <div class="tab">Web Design</div>
-        <div class="tab">Video Animation</div>
-        <div class="tab">Branding</div>
-        <div class="tab">E-Commerce</div>
-        <div class="tab">Social Marketing</div>
-        <div class="tab">Combo Packages</div>
-        <div class="tab">SEO</div>
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" data-tab="logo">Logo Design</div>
+    <div class="tab" data-tab="web">Web Design</div>
+    <div class="tab" data-tab="video">Video Animation</div>
+    <div class="tab" data-tab="branding">Branding</div>
+    <div class="tab" data-tab="ecommerce">E-Commerce</div>
+    <div class="tab" data-tab="social">Social Marketing</div>
+    <div class="tab" data-tab="combo">Combo Packages</div>
+    <div class="tab" data-tab="seo">SEO</div>
+  </div>
+
+  <!-- Pricing Cards -->
+  <div class="tab-content active" id="logo">
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="discount-badge">75% OFF $100</div>
+        <h3>$29.99</h3>
+        <h4>Basic Logo Packages</h4>
+        <ul>
+          <li>✔ 2 Custom Logo Design Concepts</li>
+          <li>✔ 2 Revisions</li>
+          <li>✔ 48 Hours Turnaround</li>
+          <li>✔ 100% Satisfaction Guarantee</li>
+          <li>✔ 100% Money Back Guarantee</li>
+        </ul>
+        <a href="#" class="btn">ORDER NOW</a>
+        <div class="live-chat">Click to <span>●</span> Live Chat</div>
       </div>
 
-      <!-- Pricing Cards -->
-      <div class="cards">
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="discount-badge">75% OFF $100</div>
-          <h3>$29.99</h3>
-          <h4>Basic Logo Packages</h4>
-          <ul>
-            <li>✔ 2 Custom Logo Design Concepts</li>
-            <li>✔ 2 Revisions</li>
-            <li>✔ 48 Hours Turnaround</li>
-            <li>✔ 100% Satisfaction Guarantee</li>
-            <li>✔ 100% Money Back Guarantee</li>
-          </ul>
-          <a href="#" class="btn">ORDER NOW</a>
-          <div class="live-chat">Click to <span>●</span> Live Chat</div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <div class="discount-badge">75% OFF $200</div>
-          <h3>$89.99</h3>
-          <h4>Beginner’s Logo Packages</h4>
-          <ul>
-            <li>✔ 4 Custom Logo Design Concepts</li>
-            <li>✔ FREE Icon</li>
-            <li>✔ Unlimited Revisions</li>
-            <li>✔ 5 File Formats (JPEG, PNG, PDF, TIFF, SVG)</li>
-            <li>✔ 100% Ownership Rights</li>
-          </ul>
-          <a href="#" class="btn">ORDER NOW</a>
-          <div class="live-chat">Click to <span>●</span> Live Chat</div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="discount-badge">75% OFF $380</div>
-          <h3>$149.99</h3>
-          <h4>Silver Logo Packages</h4>
-          <ul>
-            <li>✔ 6 Custom Logo Design Concepts</li>
-            <li>✔ Unlimited Revisions</li>
-            <li>✔ FREE Stationery Designs</li>
-            <li>✔ FREE Icon</li>
-            <li>✔ 100% Ownership Rights</li>
-          </ul>
-          <a href="#" class="btn">ORDER NOW</a>
-          <div class="live-chat">Click to <span>●</span> Live Chat</div>
-        </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="discount-badge">75% OFF $200</div>
+        <h3>$89.99</h3>
+        <h4>Beginner’s Logo Packages</h4>
+        <ul>
+          <li>✔ 4 Custom Logo Design Concepts</li>
+          <li>✔ FREE Icon</li>
+          <li>✔ Unlimited Revisions</li>
+          <li>✔ 5 File Formats (JPEG, PNG, PDF, TIFF, SVG)</li>
+          <li>✔ 100% Ownership Rights</li>
+        </ul>
+        <a href="#" class="btn">ORDER NOW</a>
+        <div class="live-chat">Click to <span>●</span> Live Chat</div>
       </div>
-    </section>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="discount-badge">75% OFF $380</div>
+        <h3>$149.99</h3>
+        <h4>Silver Logo Packages</h4>
+        <ul>
+          <li>✔ 6 Custom Logo Design Concepts</li>
+          <li>✔ Unlimited Revisions</li>
+          <li>✔ FREE Stationery Designs</li>
+          <li>✔ FREE Icon</li>
+          <li>✔ 100% Ownership Rights</li>
+        </ul>
+        <a href="#" class="btn">ORDER NOW</a>
+        <div class="live-chat">Click to <span>●</span> Live Chat</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Design Cards -->
+  <div class="tab-content" id="web">
+    <div class="cards">
+      <div class="card">
+        <div class="discount-badge">70% OFF $500</div>
+        <h3>$149.99</h3>
+        <h4>Basic Web Package</h4>
+        <ul>
+          <li>✔ 3 Pages Website</li>
+          <li>✔ Responsive Design</li>
+          <li>✔ Free Hosting (1 year)</li>
+        </ul>
+        <a href="#" class="btn">ORDER NOW</a>
+        <div class="live-chat">Click to <span>●</span> Live Chat</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Example for another tab -->
+  <div class="tab-content" id="video">
+    <div class="cards">
+      <div class="card">
+        <div class="discount-badge">60% OFF $600</div>
+        <h3>$249.99</h3>
+        <h4>Video Animation Package</h4>
+        <ul>
+          <li>✔ 60-sec Explainer Video</li>
+          <li>✔ Voice Over</li>
+          <li>✔ Unlimited Revisions</li>
+        </ul>
+        <a href="#" class="btn">ORDER NOW</a>
+        <div class="live-chat">Click to <span>●</span> Live Chat</div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Pricing Section -->
 
     <!-- stats section -->
     <section class="stats-section">
@@ -678,5 +721,6 @@
     <script src="pricing.js"></script>
     <script src="portfolio.js"></script>
     <script src="testimonials.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-
       // Counter Animation
       const counters = document.querySelectorAll(".stat h2");
       counters.forEach((counter) => {
