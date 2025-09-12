@@ -987,6 +987,10 @@ header {
   width: 300px; /* adjust as needed */
   flex-shrink: 0;
 }
+.arrow-nav span.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 /* agency info section  */
 
 /* testimonial section */
