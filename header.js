@@ -7,5 +7,12 @@
     }
   });
   function toggleMenu() {
-    document.querySelector(".menu").classList.toggle("show");
-  }
+  document.querySelector(".menu").classList.toggle("show");
+}
+
+// Close menu when clicking a link (optional)
+document.querySelectorAll(".menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".menu").classList.remove("show");
+  });
+});

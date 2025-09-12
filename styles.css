@@ -83,11 +83,13 @@ header {
   color: #fff;
 }
 /* Hamburger button */
+/* Hamburger visible on small screens */
 .hamburger {
   display: none;
-  font-size: 26px;
+  font-size: 28px;
   cursor: pointer;
   user-select: none;
+  color: #000; /* black icon */
 }
 /* ------------------- */
 /* 📱 Responsive Styles */
@@ -143,13 +145,14 @@ header {
   }
 }
 /* 📱 Responsive Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* show hamburger */
+    display: block;
   }
 
   .menu {
-    display: none; /* hide menu initially */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%; /* show below navbar */
@@ -157,29 +160,18 @@ header {
     width: 100%;
     background: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 0 0 8px 8px;
+    z-index: 999;
   }
 
   .menu.show {
-    display: flex; /* show when active */
+    display: flex;
   }
 
   .menu li {
     text-align: center;
     padding: 8px 0;
-  }
-
-  .menu li a {
-    font-size: 14px;
-    display: block;
-    width: 100%;
-  }
-
-  .quote-btn {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
   }
 }
 
